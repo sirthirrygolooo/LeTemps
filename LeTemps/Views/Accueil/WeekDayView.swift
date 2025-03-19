@@ -1,26 +1,18 @@
+//
+//  WeekDayView.swift
+//  LeTemps
+//
+//  Created by froehly jean-baptiste on 19/03/2025.
+//
+
 import SwiftUI
 
-struct WeekdayView: View {
-    var days: [String]
-    var selectedDays: [Bool]
-
+struct WeekDayView: View {
     var body: some View {
-        HStack(spacing: 4) {
-            ForEach(0..<days.count, id: \.self) { index in
-                Circle()
-                    .stroke(selectedDays[index] ? Color.blue : Color.gray, lineWidth: 2)
-                    .frame(width: 30, height: 30)
-                    .overlay(
-                        Text(days[index])
-                            .font(.caption)
-                            .foregroundColor(selectedDays[index] ? .blue : .gray)
-                    )
-            }
-        }
-        .padding(.vertical, 8)
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    WeekdayView(days: ["L", "M", "M", "J", "V", "S", "D"], selectedDays: [false, true, true, true, true, false, false])
+    WeekDayView()
 }
