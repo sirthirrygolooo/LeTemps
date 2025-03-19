@@ -5,14 +5,8 @@
 //  Created by froehly jean-baptiste on 19/03/2025.
 //
 
-import SwiftUI
+import Foundation
 
-struct LeTempsViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    LeTempsViewModel()
+class LeTempsViewModel: ObservableObject {
+    
 }
