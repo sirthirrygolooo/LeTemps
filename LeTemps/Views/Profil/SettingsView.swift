@@ -31,14 +31,13 @@ struct SettingsView: View {
 
                 Section {
                     Button(action: {
-                        // Logic for logout
                     }) {
                         Text("Déconnexion")
                             .foregroundColor(.blue)
                     }
                 }
             }
-            .navigationBarTitle("Paramètres", displayMode: .inline)
+            .navigationBarTitle("Paramètres", displayMode: .large)
             .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
@@ -47,14 +46,5 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
-    }
-}
-
-@main
-struct MyApp: App {
-    var body: some Scene {
-        WindowGroup {
-            SettingsView()
-        }
     }
 }

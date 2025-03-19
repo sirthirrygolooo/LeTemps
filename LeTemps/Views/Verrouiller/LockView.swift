@@ -11,13 +11,9 @@ struct LockView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Verrouiller une app")
-                    .font(.title)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    .padding()
-                
                 AppListView()
             }
+            .navigationBarTitle("Verrouiller une app.", displayMode: .large)
         }
     }
 }
