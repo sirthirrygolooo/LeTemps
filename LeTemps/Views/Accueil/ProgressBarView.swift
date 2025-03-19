@@ -1,18 +1,39 @@
-//
-//  ProgressBarView.swift
-//  LeTemps
-//
-//  Created by froehly jean-baptiste on 19/03/2025.
-//
-
 import SwiftUI
 
 struct ProgressBarView: View {
+    var percentage: Double
+    var color: Color
+    var icon: String
+    var time: String
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            ZStack(alignment: .leading) {
+                Rectangle()
+                    .frame(height: 20)
+                    .foregroundColor(Color.gray.opacity(0.3))
+                    .cornerRadius(10)
+
+                Rectangle()
+                    .frame(width: CGFloat(percentage / 100) * UIScreen.main.bounds.width * 0.7, height: 20)
+                    .foregroundColor(color)
+                    .cornerRadius(10)
+            }
+
+            HStack {
+                Image(systemName: icon)
+                    .foregroundColor(.white)
+                Text(time)
+                    .foregroundColor(.white)
+            }
+            .padding(.leading, 8)
+            .background(color)
+            .cornerRadius(10)
+            .padding(.leading, 4)
+        }
     }
 }
 
 #Preview {
-    ProgressBarView()
+    ProgressBarView(percentage: 10, color: .blue, icon: "checkmark", time: "22min")
 }
