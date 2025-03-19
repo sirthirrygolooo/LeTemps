@@ -10,11 +10,17 @@ import SwiftUI
 struct AppListView: View {
     var body: some View {
         List {
-            Section(header: Text("Récemment Utilisé")) {
+            Section(header: HStack {
+                Image(systemName: "clock.fill")
+                Text("Récemment utilisé")
+            } ) {
                 AppRowView(appName: "Instagram", appIcon: "instagramPic", timeUsed: "2.5h d'écran aujourd'hui")
                 AppRowView(appName: "Snapchat", appIcon: "snapPic", timeUsed: "4h d'écran aujourd'hui")
             }
-            Section(header: Text("Apps Favorites")) {
+            Section(header: HStack {
+                Image(systemName: "star.fill")
+                Text("Apps Favorites")
+            }) {
                 AppRowView(appName: "Netflix", appIcon: "netflixPic", timeUsed: "")
                 AppRowView(appName: "YouTube", appIcon: "ytPic", timeUsed: "")
                 AppRowView(appName: "WhatsApp", appIcon: "whatsappPic", timeUsed: "")
