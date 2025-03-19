@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4B0ED6A2D8ABF36000AE6CE /* LeTempsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED692D8ABF36000AE6CE /* LeTempsApp.swift */; };
+		C4B0ED6C2D8ABF36000AE6CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED6B2D8ABF36000AE6CE /* ContentView.swift */; };
+		C4B0ED6E2D8ABF37000AE6CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B0ED6D2D8ABF37000AE6CE /* Assets.xcassets */; };
+		C4B0ED712D8ABF37000AE6CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B0ED702D8ABF37000AE6CE /* Preview Assets.xcassets */; };
+		C4B0ED7A2D8ABFD6000AE6CE /* LeTempsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED792D8ABFD6000AE6CE /* LeTempsViewModel.swift */; };
+		C4B0ED7C2D8AC001000AE6CE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED7B2D8AC001000AE6CE /* HomeView.swift */; };
+		C4B0ED7E2D8AC054000AE6CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED7D2D8AC054000AE6CE /* MainView.swift */; };
+		C4B0ED802D8AC070000AE6CE /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED7F2D8AC070000AE6CE /* StatsView.swift */; };
+		C4B0ED842D8AC099000AE6CE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED832D8AC099000AE6CE /* ProfileView.swift */; };
+		C4B0ED862D8AC0AA000AE6CE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED852D8AC0AA000AE6CE /* SettingsView.swift */; };
+		C4B0ED882D8AC0C8000AE6CE /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED872D8AC0C8000AE6CE /* AppListView.swift */; };
+		C4B0ED8A2D8AC0DC000AE6CE /* AppRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED892D8AC0DC000AE6CE /* AppRowView.swift */; };
+		C4B0ED8C2D8AC0F4000AE6CE /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED8B2D8AC0F4000AE6CE /* LockView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4B0ED662D8ABF36000AE6CE /* LeTemps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeTemps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B0ED692D8ABF36000AE6CE /* LeTempsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeTempsApp.swift; sourceTree = "<group>"; };
+		C4B0ED6B2D8ABF36000AE6CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4B0ED6D2D8ABF37000AE6CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4B0ED702D8ABF37000AE6CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4B0ED792D8ABFD6000AE6CE /* LeTempsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeTempsViewModel.swift; sourceTree = "<group>"; };
+		C4B0ED7B2D8AC001000AE6CE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C4B0ED7D2D8AC054000AE6CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C4B0ED7F2D8AC070000AE6CE /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		C4B0ED832D8AC099000AE6CE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C4B0ED852D8AC0AA000AE6CE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C4B0ED872D8AC0C8000AE6CE /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
+		C4B0ED892D8AC0DC000AE6CE /* AppRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowView.swift; sourceTree = "<group>"; };
+		C4B0ED8B2D8AC0F4000AE6CE /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4B0ED632D8ABF36000AE6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4B0ED5D2D8ABF36000AE6CE = {
+			isa = PBXGroup;
+			children = (
+				C4B0ED682D8ABF36000AE6CE /* LeTemps */,
+				C4B0ED672D8ABF36000AE6CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4B0ED672D8ABF36000AE6CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4B0ED662D8ABF36000AE6CE /* LeTemps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4B0ED682D8ABF36000AE6CE /* LeTemps */ = {
+			isa = PBXGroup;
+			children = (
+				C4B0ED782D8ABFB7000AE6CE /* Views */,
+				C4B0ED772D8ABFA8000AE6CE /* ViewModels */,
+				C4B0ED692D8ABF36000AE6CE /* LeTempsApp.swift */,
+				C4B0ED6B2D8ABF36000AE6CE /* ContentView.swift */,
+				C4B0ED6D2D8ABF37000AE6CE /* Assets.xcassets */,
+				C4B0ED6F2D8ABF37000AE6CE /* Preview Content */,
+			);
+			path = LeTemps;
+			sourceTree = "<group>";
+		};
+		C4B0ED6F2D8ABF37000AE6CE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4B0ED702D8ABF37000AE6CE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4B0ED772D8ABFA8000AE6CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4B0ED792D8ABFD6000AE6CE /* LeTempsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C4B0ED782D8ABFB7000AE6CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4B0ED822D8AC085000AE6CE /* Verrouiller */,
+				C4B0ED812D8AC07F000AE6CE /* Profil */,
+				C4B0ED7B2D8AC001000AE6CE /* HomeView.swift */,
+				C4B0ED7D2D8AC054000AE6CE /* MainView.swift */,
+				C4B0ED7F2D8AC070000AE6CE /* StatsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4B0ED812D8AC07F000AE6CE /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				C4B0ED832D8AC099000AE6CE /* ProfileView.swift */,
+				C4B0ED852D8AC0AA000AE6CE /* SettingsView.swift */,
+			);
+			path = Profil;
+			sourceTree = "<group>";
+		};
+		C4B0ED822D8AC085000AE6CE /* Verrouiller */ = {
+			isa = PBXGroup;
+			children = (
+				C4B0ED872D8AC0C8000AE6CE /* AppListView.swift */,
+				C4B0ED892D8AC0DC000AE6CE /* AppRowView.swift */,
+				C4B0ED8B2D8AC0F4000AE6CE /* LockView.swift */,
+			);
+			path = Verrouiller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4B0ED652D8ABF36000AE6CE /* LeTemps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B0ED742D8ABF37000AE6CE /* Build configuration list for PBXNativeTarget "LeTemps" */;
+			buildPhases = (
+				C4B0ED622D8ABF36000AE6CE /* Sources */,
+				C4B0ED632D8ABF36000AE6CE /* Frameworks */,
+				C4B0ED642D8ABF36000AE6CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeTemps;
+			productName = LeTemps;
+			productReference = C4B0ED662D8ABF36000AE6CE /* LeTemps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4B0ED5E2D8ABF36000AE6CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C4B0ED652D8ABF36000AE6CE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = C4B0ED612D8ABF36000AE6CE /* Build configuration list for PBXProject "LeTemps" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4B0ED5D2D8ABF36000AE6CE;
+			productRefGroup = C4B0ED672D8ABF36000AE6CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4B0ED652D8ABF36000AE6CE /* LeTemps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4B0ED642D8ABF36000AE6CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B0ED712D8ABF37000AE6CE /* Preview Assets.xcassets in Resources */,
+				C4B0ED6E2D8ABF37000AE6CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4B0ED622D8ABF36000AE6CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B0ED6C2D8ABF36000AE6CE /* ContentView.swift in Sources */,
+				C4B0ED8C2D8AC0F4000AE6CE /* LockView.swift in Sources */,
+				C4B0ED862D8AC0AA000AE6CE /* SettingsView.swift in Sources */,
+				C4B0ED882D8AC0C8000AE6CE /* AppListView.swift in Sources */,
+				C4B0ED8A2D8AC0DC000AE6CE /* AppRowView.swift in Sources */,
+				C4B0ED7C2D8AC001000AE6CE /* HomeView.swift in Sources */,
+				C4B0ED802D8AC070000AE6CE /* StatsView.swift in Sources */,
+				C4B0ED6A2D8ABF36000AE6CE /* LeTempsApp.swift in Sources */,
+				C4B0ED7E2D8AC054000AE6CE /* MainView.swift in Sources */,
+				C4B0ED842D8AC099000AE6CE /* ProfileView.swift in Sources */,
+				C4B0ED7A2D8ABFD6000AE6CE /* LeTempsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C4B0ED722D8ABF37000AE6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4B0ED732D8ABF37000AE6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4B0ED752D8ABF37000AE6CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LeTemps/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jbfroehl.LeTemps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4B0ED762D8ABF37000AE6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LeTemps/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jbfroehl.LeTemps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4B0ED612D8ABF36000AE6CE /* Build configuration list for PBXProject "LeTemps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B0ED722D8ABF37000AE6CE /* Debug */,
+				C4B0ED732D8ABF37000AE6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B0ED742D8ABF37000AE6CE /* Build configuration list for PBXNativeTarget "LeTemps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B0ED752D8ABF37000AE6CE /* Debug */,
+				C4B0ED762D8ABF37000AE6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4B0ED5E2D8ABF36000AE6CE /* Project object */;
+}
