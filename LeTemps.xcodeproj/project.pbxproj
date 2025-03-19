@@ -20,6 +20,8 @@
 		C4B0ED882D8AC0C8000AE6CE /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED872D8AC0C8000AE6CE /* AppListView.swift */; };
 		C4B0ED8A2D8AC0DC000AE6CE /* AppRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED892D8AC0DC000AE6CE /* AppRowView.swift */; };
 		C4B0ED8C2D8AC0F4000AE6CE /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED8B2D8AC0F4000AE6CE /* LockView.swift */; };
+		C4DF19B72D8ACAB700CAE63D /* FriendRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF19B62D8ACAB700CAE63D /* FriendRowView.swift */; };
+		C4DF19B92D8ACAC200CAE63D /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF19B82D8ACAC200CAE63D /* FriendsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		C4B0ED872D8AC0C8000AE6CE /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
 		C4B0ED892D8AC0DC000AE6CE /* AppRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowView.swift; sourceTree = "<group>"; };
 		C4B0ED8B2D8AC0F4000AE6CE /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		C4DF19B62D8ACAB700CAE63D /* FriendRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRowView.swift; sourceTree = "<group>"; };
+		C4DF19B82D8ACAC200CAE63D /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 			children = (
 				C4B0ED832D8AC099000AE6CE /* ProfileView.swift */,
 				C4B0ED852D8AC0AA000AE6CE /* SettingsView.swift */,
+				C4DF19B62D8ACAB700CAE63D /* FriendRowView.swift */,
+				C4DF19B82D8ACAC200CAE63D /* FriendsListView.swift */,
 			);
 			path = Profil;
 			sourceTree = "<group>";
@@ -197,6 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B0ED6C2D8ABF36000AE6CE /* ContentView.swift in Sources */,
+				C4DF19B72D8ACAB700CAE63D /* FriendRowView.swift in Sources */,
+				C4DF19B92D8ACAC200CAE63D /* FriendsListView.swift in Sources */,
 				C4B0ED8C2D8AC0F4000AE6CE /* LockView.swift in Sources */,
 				C4B0ED862D8AC0AA000AE6CE /* SettingsView.swift in Sources */,
 				C4B0ED882D8AC0C8000AE6CE /* AppListView.swift in Sources */,

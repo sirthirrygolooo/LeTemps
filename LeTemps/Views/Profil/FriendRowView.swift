@@ -1,18 +1,47 @@
-//
-//  FriendRowView.swift
-//  LeTemps
-//
-//  Created by froehly jean-baptiste on 19/03/2025.
-//
-
 import SwiftUI
 
 struct FriendRowView: View {
+    var name: String
+    var icon: String
+    var screenTime: String
+    var pinned: Bool
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: icon)
+                .resizable()
+                .frame(width: 40, height: 40)
+                .clipShape(Circle())
+
+            VStack(alignment: .leading) {
+                Text(name)
+                    .font(.headline)
+                Text(screenTime)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            .padding(.leading, 8)
+
+            Spacer()
+
+            HStack {
+                Image(systemName: "message")
+                    .foregroundColor(.blue)
+                if (pinned == true) {
+                    Image(systemName: "pin.fill")
+                        .foregroundColor(.green)
+                } else {
+                    Image(systemName: "pin")
+                        .foregroundColor(.red)
+                }
+                
+            }
+        }
+        .padding()
     }
 }
 
 #Preview {
-    FriendRowView()
+    FriendRowView(name: "Mehdi", icon: "person", screenTime: "3h d'écran aujourd'hui", pinned: true)
 }
+

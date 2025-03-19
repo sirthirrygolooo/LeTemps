@@ -1,15 +1,26 @@
-//
-//  FriendsListView.swift
-//  LeTemps
-//
-//  Created by froehly jean-baptiste on 19/03/2025.
-//
-
 import SwiftUI
 
 struct FriendsListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            Section(header: Text("Trouver des amis")) {
+                TextField("Rechercher...", text: .constant(""))
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+
+            Section(header: Text("Vos Amis")) {
+                FriendRowView(name: "Mehdi", icon: "person", screenTime: "3h d'écran aujourd'hui", pinned: true)
+                FriendRowView(name: "Jamesse", icon: "person", screenTime: "7h d'écran aujourd'hui", pinned: true)
+
+                Section(header: Text("Favoris")) {
+                    FriendRowView(name: "Baptiste", icon: "person", screenTime: "", pinned: false)
+                    FriendRowView(name: "Max", icon: "person", screenTime: "", pinned: false)
+                    FriendRowView(name: "UG", icon: "person", screenTime: "", pinned: false)
+                    FriendRowView(name: "Piedslie", icon: "person", screenTime: "", pinned: false)
+                }
+            }
+        }
+        .listStyle(GroupedListStyle())
     }
 }
 
