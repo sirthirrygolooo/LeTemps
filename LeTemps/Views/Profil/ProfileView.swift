@@ -1,18 +1,34 @@
-//
-//  ProfileView.swift
-//  ScreenTimeApp
-//
-//  Created by froehly jean-baptiste on 11/03/2025.
-//
-
 import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text("Profile View")
+        NavigationView {
+            VStack {
+                Text("Profil")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding()
+
+                FriendsListView()
+
+                Spacer()
+            }
+            .navigationBarTitle("Réglages", displayMode: .inline)
+        }
     }
 }
 
-#Preview {
-    ProfileView()
+struct ProfileView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProfileView()
+    }
+}
+
+@main
+struct MyApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ProfileView()
+        }
+    }
 }
