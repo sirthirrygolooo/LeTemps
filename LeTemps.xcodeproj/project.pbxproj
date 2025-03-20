@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4877C912D8C60BD0061EF3C /* ScreenTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4877C902D8C60BD0061EF3C /* ScreenTimeView.swift */; };
+		C4877C932D8C60E90061EF3C /* ScreenTimeComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4877C922D8C60E90061EF3C /* ScreenTimeComparisonView.swift */; };
+		C4877C952D8C60F60061EF3C /* PickupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4877C942D8C60F60061EF3C /* PickupsView.swift */; };
 		C4B0ED6A2D8ABF36000AE6CE /* LeTempsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED692D8ABF36000AE6CE /* LeTempsApp.swift */; };
 		C4B0ED6C2D8ABF36000AE6CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED6B2D8ABF36000AE6CE /* ContentView.swift */; };
 		C4B0ED6E2D8ABF37000AE6CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B0ED6D2D8ABF37000AE6CE /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4877C902D8C60BD0061EF3C /* ScreenTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeView.swift; sourceTree = "<group>"; };
+		C4877C922D8C60E90061EF3C /* ScreenTimeComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeComparisonView.swift; sourceTree = "<group>"; };
+		C4877C942D8C60F60061EF3C /* PickupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupsView.swift; sourceTree = "<group>"; };
 		C4B0ED662D8ABF36000AE6CE /* LeTemps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeTemps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B0ED692D8ABF36000AE6CE /* LeTempsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeTempsApp.swift; sourceTree = "<group>"; };
 		C4B0ED6B2D8ABF36000AE6CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				C4B0ED7F2D8AC070000AE6CE /* StatsView.swift */,
+				C4877C902D8C60BD0061EF3C /* ScreenTimeView.swift */,
+				C4877C922D8C60E90061EF3C /* ScreenTimeComparisonView.swift */,
+				C4877C942D8C60F60061EF3C /* PickupsView.swift */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -232,8 +241,11 @@
 				C4B0ED8C2D8AC0F4000AE6CE /* LockView.swift in Sources */,
 				C4B0ED862D8AC0AA000AE6CE /* SettingsView.swift in Sources */,
 				C4B0ED882D8AC0C8000AE6CE /* AppListView.swift in Sources */,
+				C4877C952D8C60F60061EF3C /* PickupsView.swift in Sources */,
 				C4B0ED8A2D8AC0DC000AE6CE /* AppRowView.swift in Sources */,
+				C4877C912D8C60BD0061EF3C /* ScreenTimeView.swift in Sources */,
 				C4B0ED802D8AC070000AE6CE /* StatsView.swift in Sources */,
+				C4877C932D8C60E90061EF3C /* ScreenTimeComparisonView.swift in Sources */,
 				C4B0ED6A2D8ABF36000AE6CE /* LeTempsApp.swift in Sources */,
 				C4B0ED7E2D8AC054000AE6CE /* MainView.swift in Sources */,
 				C4B0ED842D8AC099000AE6CE /* ProfileView.swift in Sources */,
