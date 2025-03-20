@@ -1,15 +1,26 @@
-//
-//  PickupsView.swift
-//  LeTemps
-//
-//  Created by froehly jean-baptiste on 20/03/2025.
-//
-
 import SwiftUI
 
 struct PickupsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading) {
+                HStack {
+                    Image(systemName: "hand.wave")
+                        .foregroundColor(.blue)
+                    Text("Pick-ups")
+                        .font(.headline)
+                        .foregroundColor(.blue)
+                }
+                Text("0")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+            }
+            Spacer()
+        }
+        .padding()
+        .background(Color(UIColor.systemBackground))
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
 
