@@ -11,9 +11,11 @@ struct PickupsView: View {
                         .font(.headline)
                         .foregroundColor(.blue)
                 }
-                Text("0")
+                Text("8")
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                Text("Nombre de fois ou vous avez pris votre téléphone")
+                    .font(.footnote)
             }
             Spacer()
         }

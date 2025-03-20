@@ -13,7 +13,7 @@ struct FriendsListView: View {
                 FriendRowView(name: "Jamesse", icon: "person", screenTime: "7h d'écran aujourd'hui", pinned: true)
 
                 Section(header: Text("Favoris")) {
-                    FriendRowView(name: "Baptiste", icon: "person", screenTime: "", pinned: false)
+                    FriendRowView(name: "Baptiste", icon: "Snap", screenTime: "", pinned: false)
                     FriendRowView(name: "Max", icon: "person", screenTime: "", pinned: false)
                     FriendRowView(name: "UG", icon: "person", screenTime: "", pinned: false)
                     FriendRowView(name: "Piedslie", icon: "person", screenTime: "", pinned: false)

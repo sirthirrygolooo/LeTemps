@@ -4,10 +4,6 @@ struct StatsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Statistiques")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding()
 
                 ScrollView {
                     VStack(spacing: 20) {
@@ -18,7 +14,7 @@ struct StatsView: View {
                     .padding()
                 }
             }
-            .navigationBarTitle("Statistiques", displayMode: .inline)
+            .navigationBarTitle("Statistiques", displayMode: .large)
         }
     }
 }

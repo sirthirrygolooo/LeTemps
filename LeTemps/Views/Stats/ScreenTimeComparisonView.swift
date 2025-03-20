@@ -24,7 +24,7 @@ struct ScreenTimeComparisonView: View {
                     .foregroundColor(.yellow)
             }
 
-            TextField("Summary...", text: .constant(""))
+            TextField("Mon ressenti...", text: .constant(""))
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.top, 8)
         }
