@@ -21,11 +21,10 @@ struct SettingsView: View {
                     HStack {
                         Text("Thème :")
                         Spacer()
-                        Toggle("Sombre", isOn: $isDarkMode)
+                        
+                        Toggle(isDarkMode ? "Sombre":"Clair", isOn: $isDarkMode)
                             .toggleStyle(SwitchToggleStyle(tint: .blue))
-                        Text(isDarkMode ? "Sombre" : "Clair")
-                            .foregroundColor(isDarkMode ? .white : .primary)
-                            .padding(.trailing, 10)
+
                     }
                 }
 

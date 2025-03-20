@@ -15,7 +15,7 @@ struct ProgressBarView: View {
                     .cornerRadius(10)
 
                 Rectangle()
-                    .frame(width: CGFloat(percentage / 100) * UIScreen.main.bounds.width * 0.7, height: 20)
+                    .frame(width: CGFloat(percentage / 100) * UIScreen.main.bounds.width * 0.7, height: 15)
                     .foregroundColor(color)
                     .cornerRadius(10)
             }

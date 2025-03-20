@@ -8,8 +8,8 @@ struct WeekdayView: View {
         HStack(spacing: 4) {
             ForEach(0..<days.count, id: \.self) { index in
                 Circle()
-                    .stroke(selectedDays[index] ? Color.blue : Color.gray, lineWidth: 2)
-                    .frame(width: 30, height: 30)
+                    .stroke(selectedDays[index] ? Color.green : Color.gray, lineWidth: 2)
+                    .frame(width: 40, height: 50)
                     .overlay(
                         Text(days[index])
                             .font(.caption)

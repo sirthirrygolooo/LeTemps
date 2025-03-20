@@ -4,18 +4,28 @@ struct SummaryView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("BIENVENUE")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding()
-
-                Text("Résumé")
-                    .font(.title)
-                    .padding(.bottom, 20)
+                HStack {
+                    Image(systemName: "flame.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 40, height: 40)
+                    
+                    Text("BIENVENUE")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .padding()
+                    
+                        Image(systemName: "flame.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 40, height: 40)
+                }
+                
 
                 Text("Lundi 4 octobre")
                     .font(.headline)
                     .padding(.bottom, 10)
+                
 
                 WeekdayView(days: ["L", "M", "M", "J", "V", "S", "D"], selectedDays: [false, true, true, true, true, false, false])
 
@@ -35,15 +45,20 @@ struct SummaryView: View {
                         .foregroundColor(.gray)
                         .padding(.top, 4)
 
-                    ProgressBarView(percentage: 10, color: .blue, icon: "checkmark", time: "22min")
-                    ProgressBarView(percentage: 5, color: .green, icon: "checkmark", time: "12min")
-                    ProgressBarView(percentage: 7, color: .red, icon: "xmark", time: "18min")
-                    ProgressBarView(percentage: 1, color: .purple, icon: "xmark", time: "9min")
+                    ProgressBarView(percentage: 60, color: .blue, icon: "xmark", time: "310min")
+                    ProgressBarView(percentage: 15, color: .green, icon: "checkmark", time: "120min")
+                    ProgressBarView(percentage: 20, color: .red, icon: "checkmark", time: "160min")
+                    ProgressBarView(percentage: 80, color: .purple, icon: "xmark", time: "420min")
 
                     Button(action: {
+                        NavigationLink("hehe", destination: StatsView())
                     }) {
-                        Text("En voir plus")
-                            .foregroundColor(.blue)
+                        HStack {
+                            Text("En voir plus")
+                                .foregroundColor(.blue)
+                            Image(systemName: "plus.circle")
+                        }
+
                     }
                     .padding(.top, 10)
                 }
@@ -55,7 +70,7 @@ struct SummaryView: View {
 
                 Spacer()
             }
-            .navigationBarTitle("Résumé", displayMode: .inline)
+            .navigationBarTitle("Résumé", displayMode: .large)
         }
     }
 }

@@ -1,10 +1,3 @@
-//
-//  MainView.swift
-//  ScreenTimeApp
-//
-//  Created by froehly jean-baptiste on 11/03/2025.
-//
-
 import SwiftUI
 
 struct MainView: View {
@@ -29,6 +22,11 @@ struct MainView: View {
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profil")
+                }
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Paramètres")
                 }
         }
     }
