@@ -1,15 +1,25 @@
-//
-//  StatsView.swift
-//  ScreenTimeApp
-//
-//  Created by froehly jean-baptiste on 11/03/2025.
-//
-
 import SwiftUI
 
 struct StatsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("Statistiques")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding()
+
+                ScrollView {
+                    VStack(spacing: 20) {
+                        ScreenTimeView()
+                        PickupsView()
+                        ScreenTimeComparisonView()
+                    }
+                    .padding()
+                }
+            }
+            .navigationBarTitle("Statistiques", displayMode: .inline)
+        }
     }
 }
 

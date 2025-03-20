@@ -1,15 +1,37 @@
-//
-//  ScreenTimeComparisonView.swift
-//  LeTemps
-//
-//  Created by froehly jean-baptiste on 20/03/2025.
-//
-
 import SwiftUI
 
 struct ScreenTimeComparisonView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            HStack {
+                Image(systemName: "clock")
+                    .foregroundColor(.purple)
+                Text("Temps d'écran")
+                    .font(.headline)
+                    .foregroundColor(.purple)
+            }
+
+            Text("En baisse !")
+                .font(.subheadline)
+                .padding(.vertical, 4)
+
+            HStack {
+                Text("1h 45")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                Spacer()
+                Image(systemName: "face.smiling")
+                    .foregroundColor(.yellow)
+            }
+
+            TextField("Summary...", text: .constant(""))
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(.top, 8)
+        }
+        .padding()
+        .background(Color(UIColor.systemBackground))
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
 
