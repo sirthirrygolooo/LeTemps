@@ -17,7 +17,7 @@ struct AppRowView: View {
         HStack {
             Image(appIcon)
                 .resizable()
-                .frame(width: 40, height: 40)
+                .frame(width: 50, height: 50)
                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             
             VStack(alignment: .leading) {
@@ -43,5 +43,5 @@ struct AppRowView: View {
 }
 
 #Preview {
-    AppRowView(appName: "Instagram", appIcon: "photo", timeUsed: "2.5h d'écran aujourd'hui")
+    AppRowView(appName: "Instagram", appIcon: "Snap", timeUsed: "2.5h d'écran aujourd'hui")
 }
