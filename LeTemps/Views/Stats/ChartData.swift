@@ -1,8 +1,7 @@
-//
-//  ChartData.swift
-//  LeTemps
-//
-//  Created by froehly jean-baptiste on 25/03/2025.
-//
-
-import Foundation
+struct ChartData {
+    var id = UUID()
+    var color : Color
+    var percent : CGFloat
+    var value : CGFloat
+    
+}
