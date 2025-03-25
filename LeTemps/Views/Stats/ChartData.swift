@@ -5,4 +5,6 @@ struct ChartData: Identifiable {
     var color: Color
     var percent: CGFloat
     var value: CGFloat
+    var appName: String
+    var tempMin: CGFloat
 }

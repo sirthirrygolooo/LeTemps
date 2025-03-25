@@ -21,16 +21,20 @@ struct CircularGraphView: View {
                         .animation(.spring(), value: indexOfTappedSlice)
                 }
                 if indexOfTappedSlice != -1 {
-                    Text(String(format: "%.2f%%", chartDataObj.chartData[indexOfTappedSlice].percent))
-                        .font(.title)
+                    VStack {
+                        Text(String(format: "%.2f%%", chartDataObj.chartData[indexOfTappedSlice].percent))
+                            .font(.title)
+                        Text(String(format: "%.2f% mins", chartDataObj.chartData[indexOfTappedSlice].tempMin))
+                            .font(.subheadline)
+                    }
                 }
             }
             .frame(width: 200, height: 250)
             .padding()
             
-            ForEach(0..<chartDataObj.chartData.count) { index in
+            ForEach(chartDataObj.chartData.indices, id: \.self) { index in
                 HStack {
-                    Text(String(format: "%.2f", Double(chartDataObj.chartData[index].percent))+"%")
+                    Text(chartDataObj.chartData[index].appName)
                         .onTapGesture {
                             indexOfTappedSlice = indexOfTappedSlice == index ? -1 : index
                         }
