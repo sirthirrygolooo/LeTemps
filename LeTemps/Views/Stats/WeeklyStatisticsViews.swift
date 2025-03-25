@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct WeeklyStatisticsView: View {
-    @State private var showPieChart = true
+    @State private var showBarChart = true
+    @ObservedObject var chartDataObj = ChartDataContainer()
 
     var body: some View {
         NavigationView {
@@ -11,19 +12,19 @@ struct WeeklyStatisticsView: View {
                     .fontWeight(.bold)
                     .padding()
 
-                Picker("Vue", selection: $showPieChart) {
-                    Text("Camembert").tag(true)
-                    Text("Linéaire").tag(false)
+                Picker("Vue", selection: $showBarChart) {
+                    Text("Barres").tag(true)
+                    Text("Camembert").tag(false)
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal)
 
                 ScrollView {
                     VStack(spacing: 20) {
-                        if showPieChart {
-                            CircularGraphView()
+                        if showBarChart {
+                            HorizontalBarChartView(chartDataObj: chartDataObj)
                         } else {
-                            LinearGraphView(data: [20, 15, 25, 10, 15, 15], color: .green)
+                            CircularGraphView(chartDataObj: chartDataObj)
                         }
                     }
                     .padding()
@@ -31,9 +32,13 @@ struct WeeklyStatisticsView: View {
             }
             .navigationBarTitle("Statistiques", displayMode: .inline)
         }
+        .onAppear {
+            chartDataObj.calc()
+        }
     }
 }
 
 #Preview {
     WeeklyStatisticsView()
 }
+

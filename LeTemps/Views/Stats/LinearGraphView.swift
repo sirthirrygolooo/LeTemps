@@ -1,24 +1,32 @@
 import SwiftUI
 
 struct LinearGraphView: View {
-    var data: [Double]
-    var color: Color
+    @ObservedObject var chartDataObj: ChartDataContainer
 
     var body: some View {
-        ZStack {
-            ForEach(0..<data.count, id: \.self) { index in
-                Rectangle()
-                    .frame(width: 30, height: CGFloat(data[index]) * 3)
-                    .offset(y: -CGFloat(data[index]) * 3)
-                    .foregroundColor(color)
-                    .animation(.easeInOut)
-                    .position(x: CGFloat(index) * 40 + 20)
+        VStack(alignment: .leading, spacing: 10) {
+            ForEach(chartDataObj.chartData) { data in
+                HStack {
+                    Text(data.appName)
+                        .font(.headline)
+                        .frame(width: 100, alignment: .leading)
+
+                    Rectangle()
+                        .fill(data.color)
+                        .frame(height: 20)
+                        .frame(width: CGFloat(data.percent) * 3)
+                        .cornerRadius(10)
+
+                    Text(String(format: "%.0f%%", data.percent))
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
             }
         }
-        .frame(height: 200)
+        .padding()
     }
 }
 
 #Preview {
-    LinearGraphView(data: [10, 20, 30, 40, 50, 60, 70], color: .green)
+    LinearGraphView(chartDataObj: ChartDataContainer())
 }
