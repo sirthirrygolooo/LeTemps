@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CicularGraphView: View {
-    struct DonutChart : View {
+    
     @ObservedObject var charDataObj = ChartDataContainer()
     @State var indexOfTappedSlice = -1
     var body: some View {
@@ -29,7 +29,7 @@ struct CicularGraphView: View {
                 self.charDataObj.calc()
             }
         }
-    }
+    
 }
 
 #Preview {
@@ -40,4 +40,5 @@ struct CicularGraphView: View {
         ("App4", 10, .yellow),
         ("App5", 15, .purple),
         ("App6", 15, .orange)
-    ])}
+    ])
+}

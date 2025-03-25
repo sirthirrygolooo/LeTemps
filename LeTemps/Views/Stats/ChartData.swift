@@ -1,3 +1,5 @@
+import SwiftUI
+
 struct ChartData {
     var id = UUID()
     var color : Color
