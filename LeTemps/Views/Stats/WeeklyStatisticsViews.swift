@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct WeeklyStatisticsView: View {
-    @State private var showCircularGraph = true
+    @State private var showPieChart = true
 
     var body: some View {
         NavigationView {
@@ -11,8 +11,8 @@ struct WeeklyStatisticsView: View {
                     .fontWeight(.bold)
                     .padding()
 
-                Picker("Vue", selection: $showCircularGraph) {
-                    Text("Circulaire").tag(true)
+                Picker("Vue", selection: $showPieChart) {
+                    Text("Camembert").tag(true)
                     Text("Linéaire").tag(false)
                 }
                 .pickerStyle(SegmentedPickerStyle())
@@ -20,24 +20,17 @@ struct WeeklyStatisticsView: View {
 
                 ScrollView {
                     VStack(spacing: 20) {
-                        if showCircularGraph {
-                            VStack {
-                                ForEach(0..<6) { index in
-                                    HStack {
-                                        CircularGraphView(percentage: Double(index) * 10 + 15, color: .blue)
-                                            .frame(width: 100, height: 100)
-                                        VStack(alignment: .leading) {
-                                            Text("App\(index + 1)")
-                                                .font(.headline)
-                                            Text("Utilisation")
-                                                .font(.subheadline)
-                                                .foregroundColor(.gray)
-                                        }
-                                    }
-                                }
-                            }
+                        if showPieChart {
+                            CicularGraphView(data: [
+                                ("App1", 20, .blue),
+                                ("App2", 15, .green),
+                                ("App3", 25, .red),
+                                ("App4", 10, .yellow),
+                                ("App5", 15, .purple),
+                                ("App6", 15, .orange)
+                            ])
                         } else {
-                            LinearGraphView(data: [10, 20, 30, 40, 50, 60, 70], color: .green)
+                            LinearGraphView(data: [20, 15, 25, 10, 15, 15], color: .green)
                         }
                     }
                     .padding()

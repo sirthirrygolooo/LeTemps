@@ -1,29 +1,75 @@
 import SwiftUI
 
-struct CircularGraphView: View {
-    var percentage: Double
-    var color: Color
+struct CicularGraphView: View {
+    var data: [(title: String, value: Double, color: Color)]
 
     var body: some View {
         ZStack {
-            Circle()
-                .trim(from: 0, to: 1)
-                .stroke(Color.gray.opacity(0.3), lineWidth: 20)
-                .rotationEffect(.degrees(270))
-
-            Circle()
-                .trim(from: 0, to: percentage / 100)
-                .stroke(color, lineWidth: 20)
-                .rotationEffect(.degrees(270))
-
-            Text(String(format: "%.0f%%", percentage))
+            ForEach(0..<data.count) { index in
+                PieSliceView(
+                    startAngle: self.startAngle(for: index),
+                    endAngle: self.endAngle(for: index),
+                    color: self.data[index].color
+                )
+                .rotationEffect(.degrees(self.startAngle(for: index) - 90))
+                .onAppear {
+                    withAnimation(.easeInOut(duration: 1.0)) {
+                        self.data[index].value = self.data[index].value
+                    }
+                }
+            }
+            Text(totalTimeText())
                 .font(.headline)
-                .foregroundColor(color)
+                .foregroundColor(.black)
+        }
+        .frame(width: 200, height: 200)
+    }
+
+    private func startAngle(for index: Int) -> Double {
+        let sum = data[..<index].reduce(0) { $0 + $1.value }
+        return Double(sum) / 100 * 360
+    }
+
+    private func endAngle(for index: Int) -> Double {
+        let sum = data[..<(index + 1)].reduce(0) { $0 + $1.value }
+        return Double(sum) / 100 * 360
+    }
+
+    private func totalTimeText() -> String {
+        let total = data.reduce(0) { $0 + $1.value }
+        return "\(Int(total))%"
+    }
+}
+
+struct PieSliceView: View {
+    var startAngle: Double
+    var endAngle: Double
+    var color: Color
+
+    var body: some View {
+        GeometryReader { geometry in
+            Path { path in
+                let center = CGPoint(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                path.move(to: center)
+                path.addArc(
+                    center: center,
+                    radius: min(geometry.size.width, geometry.size.height) / 2,
+                    startAngle: .degrees(self.startAngle),
+                    endAngle: .degrees(self.endAngle),
+                    clockwise: false
+                )
+            }
+            .fill(color)
         }
     }
 }
 
 #Preview {
-    CircularGraphView(percentage: 65, color: .blue)
-            .frame(width: 100, height: 100)
-}
+    CicularGraphView(data: [
+        ("App1", 20, .blue),
+        ("App2", 15, .green),
+        ("App3", 25, .red),
+        ("App4", 10, .yellow),
+        ("App5", 15, .purple),
+        ("App6", 15, .orange)
+    ])}
