@@ -27,9 +27,25 @@ struct CircularGraphView: View {
             }
             .frame(width: 200, height: 250)
             .padding()
-            .onAppear {
-                chartDataObj.calc()
+            
+            ForEach(0..<chartDataObj.chartData.count) { index in
+                HStack {
+                    Text(String(format: "%.2f", Double(chartDataObj.chartData[index].percent))+"%")
+                        .onTapGesture {
+                            indexOfTappedSlice = indexOfTappedSlice == index ? -1 : index
+                        }
+                        .font(indexOfTappedSlice == index ? .headline : .subheadline)
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(chartDataObj.chartData[index].color)
+                        .frame(width: 15, height: 15)
+                }
             }
+            .padding(8)
+            .frame(width: 300, alignment: .trailing)
+            
+        }
+        .onAppear {
+            chartDataObj.calc()
         }
     }
 }
