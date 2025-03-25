@@ -25,6 +25,8 @@
 		C4C948372D92934A000BF2AB /* CircularGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C948362D92934A000BF2AB /* CircularGraphView.swift */; };
 		C4C948392D92937A000BF2AB /* LinearGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C948382D92937A000BF2AB /* LinearGraphView.swift */; };
 		C4C9483B2D92938B000BF2AB /* WeeklyStatisticsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9483A2D92938B000BF2AB /* WeeklyStatisticsViews.swift */; };
+		C4C9483D2D9297F5000BF2AB /* ChartDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9483C2D9297F5000BF2AB /* ChartDataContainer.swift */; };
+		C4C9483F2D929831000BF2AB /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9483E2D929831000BF2AB /* ChartData.swift */; };
 		C4DF19B72D8ACAB700CAE63D /* FriendRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF19B62D8ACAB700CAE63D /* FriendRowView.swift */; };
 		C4DF19B92D8ACAC200CAE63D /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF19B82D8ACAC200CAE63D /* FriendsListView.swift */; };
 		C4DF19C32D8AD27B00CAE63D /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF19C22D8AD27B00CAE63D /* ProgressBarView.swift */; };
@@ -52,6 +54,8 @@
 		C4C948362D92934A000BF2AB /* CircularGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularGraphView.swift; sourceTree = "<group>"; };
 		C4C948382D92937A000BF2AB /* LinearGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGraphView.swift; sourceTree = "<group>"; };
 		C4C9483A2D92938B000BF2AB /* WeeklyStatisticsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyStatisticsViews.swift; sourceTree = "<group>"; };
+		C4C9483C2D9297F5000BF2AB /* ChartDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataContainer.swift; sourceTree = "<group>"; };
+		C4C9483E2D929831000BF2AB /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		C4DF19B62D8ACAB700CAE63D /* FriendRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRowView.swift; sourceTree = "<group>"; };
 		C4DF19B82D8ACAC200CAE63D /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
 		C4DF19C22D8AD27B00CAE63D /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				C4C948362D92934A000BF2AB /* CircularGraphView.swift */,
 				C4C948382D92937A000BF2AB /* LinearGraphView.swift */,
 				C4C9483A2D92938B000BF2AB /* WeeklyStatisticsViews.swift */,
+				C4C9483C2D9297F5000BF2AB /* ChartDataContainer.swift */,
+				C4C9483E2D929831000BF2AB /* ChartData.swift */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C9483D2D9297F5000BF2AB /* ChartDataContainer.swift in Sources */,
 				C4B0ED6C2D8ABF36000AE6CE /* ContentView.swift in Sources */,
 				C4DF19C72D8AD2A700CAE63D /* WeekDayView.swift in Sources */,
 				C4DF19B72D8ACAB700CAE63D /* FriendRowView.swift in Sources */,
@@ -257,6 +264,7 @@
 				C4877C912D8C60BD0061EF3C /* ScreenTimeView.swift in Sources */,
 				C4B0ED802D8AC070000AE6CE /* StatsView.swift in Sources */,
 				C4877C932D8C60E90061EF3C /* ScreenTimeComparisonView.swift in Sources */,
+				C4C9483F2D929831000BF2AB /* ChartData.swift in Sources */,
 				C4B0ED6A2D8ABF36000AE6CE /* LeTempsApp.swift in Sources */,
 				C4B0ED7E2D8AC054000AE6CE /* MainView.swift in Sources */,
 				C4B0ED842D8AC099000AE6CE /* ProfileView.swift in Sources */,

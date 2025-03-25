@@ -5,18 +5,13 @@ struct CicularGraphView: View {
 
     var body: some View {
         ZStack {
-            ForEach(0..<data.count) { index in
+            ForEach(0..<6) { index in
                 PieSliceView(
                     startAngle: self.startAngle(for: index),
                     endAngle: self.endAngle(for: index),
                     color: self.data[index].color
                 )
                 .rotationEffect(.degrees(self.startAngle(for: index) - 90))
-                .onAppear {
-                    withAnimation(.easeInOut(duration: 1.0)) {
-                        self.data[index].value = self.data[index].value
-                    }
-                }
             }
             Text(totalTimeText())
                 .font(.headline)
