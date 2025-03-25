@@ -26,19 +26,20 @@ struct SettingsView: View {
                             .toggleStyle(SwitchToggleStyle(tint: .blue))
 
                     }
-                }
+                }.shadow(radius: 5)
 
                 Section {
                     Button(action: {
+                        
                     }) {
                         Text("Déconnexion")
                             .foregroundColor(.blue)
                     }
-                }
+                }.shadow(radius: 5)
             }
             .navigationBarTitle("Paramètres", displayMode: .large)
             .preferredColorScheme(isDarkMode ? .dark : .light)
-        }
+        }.shadow(radius: 5)
     }
 }
 

@@ -22,6 +22,9 @@
 		C4B0ED882D8AC0C8000AE6CE /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED872D8AC0C8000AE6CE /* AppListView.swift */; };
 		C4B0ED8A2D8AC0DC000AE6CE /* AppRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED892D8AC0DC000AE6CE /* AppRowView.swift */; };
 		C4B0ED8C2D8AC0F4000AE6CE /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0ED8B2D8AC0F4000AE6CE /* LockView.swift */; };
+		C4C948372D92934A000BF2AB /* CircularGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C948362D92934A000BF2AB /* CircularGraphView.swift */; };
+		C4C948392D92937A000BF2AB /* LinearGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C948382D92937A000BF2AB /* LinearGraphView.swift */; };
+		C4C9483B2D92938B000BF2AB /* WeeklyStatisticsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9483A2D92938B000BF2AB /* WeeklyStatisticsViews.swift */; };
 		C4DF19B72D8ACAB700CAE63D /* FriendRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF19B62D8ACAB700CAE63D /* FriendRowView.swift */; };
 		C4DF19B92D8ACAC200CAE63D /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF19B82D8ACAC200CAE63D /* FriendsListView.swift */; };
 		C4DF19C32D8AD27B00CAE63D /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF19C22D8AD27B00CAE63D /* ProgressBarView.swift */; };
@@ -46,6 +49,9 @@
 		C4B0ED872D8AC0C8000AE6CE /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
 		C4B0ED892D8AC0DC000AE6CE /* AppRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowView.swift; sourceTree = "<group>"; };
 		C4B0ED8B2D8AC0F4000AE6CE /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		C4C948362D92934A000BF2AB /* CircularGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularGraphView.swift; sourceTree = "<group>"; };
+		C4C948382D92937A000BF2AB /* LinearGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGraphView.swift; sourceTree = "<group>"; };
+		C4C9483A2D92938B000BF2AB /* WeeklyStatisticsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyStatisticsViews.swift; sourceTree = "<group>"; };
 		C4DF19B62D8ACAB700CAE63D /* FriendRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRowView.swift; sourceTree = "<group>"; };
 		C4DF19B82D8ACAC200CAE63D /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
 		C4DF19C22D8AD27B00CAE63D /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,9 @@
 				C4877C902D8C60BD0061EF3C /* ScreenTimeView.swift */,
 				C4877C922D8C60E90061EF3C /* ScreenTimeComparisonView.swift */,
 				C4877C942D8C60F60061EF3C /* PickupsView.swift */,
+				C4C948362D92934A000BF2AB /* CircularGraphView.swift */,
+				C4C948382D92937A000BF2AB /* LinearGraphView.swift */,
+				C4C9483A2D92938B000BF2AB /* WeeklyStatisticsViews.swift */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -237,6 +246,8 @@
 				C4DF19C72D8AD2A700CAE63D /* WeekDayView.swift in Sources */,
 				C4DF19B72D8ACAB700CAE63D /* FriendRowView.swift in Sources */,
 				C4DF19C52D8AD29200CAE63D /* SummaryView.swift in Sources */,
+				C4C948392D92937A000BF2AB /* LinearGraphView.swift in Sources */,
+				C4C9483B2D92938B000BF2AB /* WeeklyStatisticsViews.swift in Sources */,
 				C4DF19B92D8ACAC200CAE63D /* FriendsListView.swift in Sources */,
 				C4B0ED8C2D8AC0F4000AE6CE /* LockView.swift in Sources */,
 				C4B0ED862D8AC0AA000AE6CE /* SettingsView.swift in Sources */,
@@ -249,6 +260,7 @@
 				C4B0ED6A2D8ABF36000AE6CE /* LeTempsApp.swift in Sources */,
 				C4B0ED7E2D8AC054000AE6CE /* MainView.swift in Sources */,
 				C4B0ED842D8AC099000AE6CE /* ProfileView.swift in Sources */,
+				C4C948372D92934A000BF2AB /* CircularGraphView.swift in Sources */,
 				C4B0ED7A2D8ABFD6000AE6CE /* LeTempsViewModel.swift in Sources */,
 				C4DF19C32D8AD27B00CAE63D /* ProgressBarView.swift in Sources */,
 			);

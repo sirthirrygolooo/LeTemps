@@ -13,10 +13,10 @@ struct AppListView: View {
             Section(header: HStack {
                 Image(systemName: "clock.fill")
                 Text("Récemment utilisé")
-            } ) {
+            }) {
                 AppRowView(appName: "Instagram", appIcon: "Instagram", timeUsed: "2.5h d'écran aujourd'hui")
                 AppRowView(appName: "Snapchat", appIcon: "Snap", timeUsed: "4h d'écran aujourd'hui")
-            }
+            }.shadow(radius: 5)
             Section(header: HStack {
                 Image(systemName: "star.fill")
                 Text("Apps Favorites")
@@ -25,7 +25,7 @@ struct AppListView: View {
                 AppRowView(appName: "YouTube", appIcon: "Youtube", timeUsed: "")
                 AppRowView(appName: "WhatsApp", appIcon: "Whatsapp", timeUsed: "")
                 AppRowView(appName: "Linkedin", appIcon: "Linkedin", timeUsed: "")
-            }
+            }.shadow(radius: 5)
         }
     }
 }

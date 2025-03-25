@@ -27,7 +27,7 @@ struct SummaryView: View {
                     .padding(.bottom, 10)
                 
 
-                WeekdayView(days: ["L", "M", "M", "J", "V", "S", "D"], selectedDays: [false, true, true, true, true, false, false])
+                WeekdayView(days: ["L", "M", "M", "J", "V", "S", "D"], selectedDays: [false, true, true, false, true, false, true])
 
                 VStack {
                     HStack {
@@ -45,13 +45,15 @@ struct SummaryView: View {
                         .foregroundColor(.gray)
                         .padding(.top, 4)
 
-                    ProgressBarView(percentage: 60, color: .blue, icon: "xmark", time: "310min")
-                    ProgressBarView(percentage: 15, color: .green, icon: "checkmark", time: "120min")
-                    ProgressBarView(percentage: 20, color: .red, icon: "checkmark", time: "160min")
-                    ProgressBarView(percentage: 80, color: .purple, icon: "xmark", time: "420min")
+                    ProgressBarView(day:"Lun",percentage: 60, color: .blue, icon: "xmark", time: "310min")
+                    ProgressBarView(day:"Mar",percentage: 15, color: .green, icon: "checkmark", time: "120min")
+                    ProgressBarView(day:"Mer",percentage: 20, color: .red, icon: "checkmark", time: "160min")
+                    ProgressBarView(day:"Jeu",percentage: 59, color: .purple, icon: "xmark", time: "420min")
+                    ProgressBarView(day:"Ven",percentage: 05, color: .cyan, icon: "checkmark", time: "57min")
+                    ProgressBarView(day:"Sam",percentage: 67, color: .yellow, icon: "xmark", time: "420min")
+                    ProgressBarView(day:"Dim",percentage: 30, color: .mint, icon: "checkmark", time: "180min")
 
                     Button(action: {
-                        NavigationLink("hehe", destination: StatsView())
                     }) {
                         HStack {
                             Text("En voir plus")

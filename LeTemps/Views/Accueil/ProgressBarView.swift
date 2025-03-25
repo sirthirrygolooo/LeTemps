@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ProgressBarView: View {
+    var day: String
     var percentage: Double
     var color: Color
     var icon: String
@@ -8,6 +9,7 @@ struct ProgressBarView: View {
 
     var body: some View {
         HStack {
+            Text(day)
             ZStack(alignment: .leading) {
                 Rectangle()
                     .frame(height: 20)
@@ -35,5 +37,5 @@ struct ProgressBarView: View {
 }
 
 #Preview {
-    ProgressBarView(percentage: 10, color: .blue, icon: "checkmark", time: "22min")
+    ProgressBarView(day:"L",percentage: 10, color: .blue, icon: "checkmark", time: "22min")
 }
