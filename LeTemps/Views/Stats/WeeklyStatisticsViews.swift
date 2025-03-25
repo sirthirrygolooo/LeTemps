@@ -22,7 +22,7 @@ struct WeeklyStatisticsView: View {
                 ScrollView {
                     VStack(spacing: 20) {
                         if showBarChart {
-                            HorizontalBarChartView(chartDataObj: chartDataObj)
+                            LinearGraphView(chartDataObj: chartDataObj)
                         } else {
                             CircularGraphView(chartDataObj: chartDataObj)
                         }
@@ -30,7 +30,7 @@ struct WeeklyStatisticsView: View {
                     .padding()
                 }
             }
-            .navigationBarTitle("Statistiques", displayMode: .inline)
+            .navigationBarTitle("Statistiques +", displayMode: .inline)
         }
         .onAppear {
             chartDataObj.calc()

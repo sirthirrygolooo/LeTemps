@@ -27,6 +27,14 @@ struct CircularGraphView: View {
                         Text(String(format: "%.2f% mins", chartDataObj.chartData[indexOfTappedSlice].tempMin))
                             .font(.subheadline)
                     }
+                } else {
+                    VStack {
+                        Text("Cliquez sur une donnée")
+                            .font(.title2)
+                        Text("Hehe")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
                 }
             }
             .frame(width: 200, height: 250)

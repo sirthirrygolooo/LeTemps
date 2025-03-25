@@ -7,4 +7,5 @@ struct ChartData: Identifiable {
     var value: CGFloat
     var appName: String
     var tempMin: CGFloat
+    var appIcon: String
 }
