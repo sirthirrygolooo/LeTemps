@@ -1,9 +1,8 @@
 import SwiftUI
 
-struct ChartData {
+struct ChartData: Identifiable {
     var id = UUID()
-    var color : Color
-    var percent : CGFloat
-    var value : CGFloat
-    
+    var color: Color
+    var percent: CGFloat
+    var value: CGFloat
 }
