@@ -6,26 +6,24 @@ struct SummaryView: View {
             VStack {
                 HStack {
                     Image(systemName: "flame.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 40, height: 40)
-                    
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 40, height: 40)
+
                     Text("BIENVENUE")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding()
-                    
-                        Image(systemName: "flame.fill")
+
+                    Image(systemName: "flame.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 40, height: 40)
                 }
-                
 
                 Text("Lundi 4 octobre")
                     .font(.headline)
                     .padding(.bottom, 10)
-                
 
                 WeekdayView(days: ["L", "M", "M", "J", "V", "S", "D"], selectedDays: [false, true, true, false, true, false, true])
 
@@ -53,14 +51,12 @@ struct SummaryView: View {
                     ProgressBarView(day:"Sam",percentage: 67, color: .yellow, icon: "xmark", time: "420min")
                     ProgressBarView(day:"Dim",percentage: 30, color: .mint, icon: "checkmark", time: "180min")
 
-                    Button(action: {
-                    }) {
+                    NavigationLink(destination: WeeklyStatisticsView()) {
                         HStack {
                             Text("En voir plus")
                                 .foregroundColor(.blue)
                             Image(systemName: "plus.circle")
                         }
-
                     }
                     .padding(.top, 10)
                 }

@@ -29,9 +29,9 @@ struct CircularGraphView: View {
                     }
                 } else {
                     VStack {
-                        Text("Cliquez sur une donnée")
+                        Text("Cliquez")
                             .font(.title2)
-                        Text("Hehe")
+                        Text("pour en savoir plus")
                             .font(.subheadline)
                             .foregroundColor(.gray)
                     }
